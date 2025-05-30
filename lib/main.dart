@@ -11,7 +11,7 @@ void main() {
               colors: [Colors.purple,Colors.deepPurple],),
           ),
 child: const Center(
-  child: Text('wookie meat'),
+  child: Text('wookie meat', style: TextStyle(color: Colors.white, fontSize: 28.0),),
 )
 
         ),
@@ -19,4 +19,3 @@ child: const Center(
     ),
   );
 }
-
