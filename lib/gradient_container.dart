@@ -1,3 +1,4 @@
+import 'package:app1/styled_text.dart';
 import 'package:flutter/material.dart';
 
 class GradientContainer extends StatelessWidget{
@@ -11,9 +12,8 @@ class GradientContainer extends StatelessWidget{
               colors: [Colors.purple,Colors.deepPurple],),
           ),
 child: const Center(
-  child: Text('wookie meat', style: TextStyle(color: Colors.white, fontSize: 28.0),),
-)
-
+  child: StyledText()
+        )
         );
   }
 }
