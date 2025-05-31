@@ -1,21 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:app1/gradient_container.dart';
 
 
 void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Colors.purple,Colors.deepPurple],),
-          ),
-child: const Center(
-  child: Text('wookie meat', style: TextStyle(color: Colors.white, fontSize: 28.0),),
-)
-
-        ),
+        body: GradientContainer()
       ),
     ),
   );
 }
+
