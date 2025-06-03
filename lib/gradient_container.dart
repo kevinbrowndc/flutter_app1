@@ -1,4 +1,3 @@
-import 'package:app1/styled_text.dart';
 import 'package:flutter/material.dart';
 
 class GradientContainer extends StatelessWidget{
@@ -6,6 +5,10 @@ class GradientContainer extends StatelessWidget{
 
 final Color color1;
 final Color color2;
+
+void rollDice() {
+
+}
 
  @override
   Widget build (context) {
@@ -15,9 +18,24 @@ final Color color2;
               colors: [color1, color2],
           ),
           ),
-child: const Center(
-  child: StyledText('wookie meats'),
-        )
-        );
+child: Center(
+  child: Column
+  (mainAxisSize: MainAxisSize.min,
+    children: [Image.asset('assets/dice-2.png', width: 200,),
+  TextButton(
+    onPressed: rollDice, 
+    style: TextButton.styleFrom(
+      foregroundColor: Colors.white,
+      textStyle: const TextStyle(
+        fontSize: 28,
+      ),
+      ),  
+
+    child: const Text('Roll Dice')
+    )
+    ]
+    ),
+    ),
+    );      
   }
 }
