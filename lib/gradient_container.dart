@@ -22,6 +22,7 @@ child: Center(
   child: Column
   (mainAxisSize: MainAxisSize.min,
     children: [Image.asset('assets/dice-2.png', width: 200,),
+  const SizedBox(height: 20),
   TextButton(
     onPressed: rollDice, 
     style: TextButton.styleFrom(
